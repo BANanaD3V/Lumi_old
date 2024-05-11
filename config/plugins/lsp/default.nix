@@ -11,6 +11,6 @@
     ./trouble.nix
     ./smart-splits.nix
     ./actions-preview.nix
-    ./ultimate-autopair.nix
+    ./nvim-autopairs.nix
   ];
 }

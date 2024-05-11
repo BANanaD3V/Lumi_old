@@ -25,7 +25,6 @@
         system,
         ...
       }: let
-        imports = [./misc];
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
         nixvimModule = {
@@ -43,10 +42,12 @@
           default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
         };
 
-        packages = {
+        packages = with pkgs; {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
         };
+
+        formatter = pkgs.alejandra;
       };
     };
 }

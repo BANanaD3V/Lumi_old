@@ -2,11 +2,11 @@
   # Import all your configuration modules here
   imports = [
     ./plugins
+    ./colorscheme.nix
   ];
   config = {
     globals.mapleader = " ";
     clipboard.register = "unnamedplus";
-    colorschemes.catppuccin.enable = true;
   };
   options = {
     number = true;
