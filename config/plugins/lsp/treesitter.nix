@@ -1,0 +1,14 @@
+{pkgs, ...}: {
+  plugins.treesitter = {
+    enable = true;
+    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      nix
+      lua
+      bash
+      python
+      typescript
+      # tsx-grammar
+      javascript
+    ];
+  };
+}
