@@ -1,9 +1,9 @@
 {...}: {
-    plugins.which-key = {
-      enable = true;
-      icons = {
-        separator = "";
-        group = "";
-      };
+  plugins.which-key = {
+    enable = true;
+    icons = {
+      separator = "";
+      group = "";
     };
+  };
 }

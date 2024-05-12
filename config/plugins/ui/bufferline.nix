@@ -2,8 +2,10 @@
   plugins.bufferline = {
     enable = true;
     diagnostics = "nvim_lsp";
-    highlights = "require(\"catppuccin.groups.integrations.bufferline\").get()";
     separatorStyle = "thin"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
+    indicator = {
+      style = "icon";
+    };
     offsets = [
       {
         filetype = "neo-tree";

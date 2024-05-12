@@ -7,7 +7,7 @@
         disable_bold = false;
         disable_italic = false;
         disable_underline = false;
-        transparent_background = false;
+        transparent_background = true;
         term_colors = true;
         integrations = {
           cmp = true;
