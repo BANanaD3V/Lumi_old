@@ -7,13 +7,13 @@
         disable_bold = false;
         disable_italic = false;
         disable_underline = false;
-        transparent_background = true;
+        transparent_background = false;
         term_colors = true;
         integrations = {
           cmp = true;
           noice = true;
           notify = true;
-          neotree = true;
+          neotree = false;
           harpoon = true;
           gitsigns = true;
           which_key = true;

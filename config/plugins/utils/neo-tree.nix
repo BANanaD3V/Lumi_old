@@ -1,7 +1,7 @@
 {...}: {
   plugins.neo-tree = {
     enable = true;
-    popupBorderStyle = "rounded";
+    popupBorderStyle = "NC";
     filesystem.hijackNetrwBehavior = "open_current";
   };
   keymaps = [
