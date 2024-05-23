@@ -1,16 +1,12 @@
 {pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [
-    hop-nvim
-  ];
-  extraConfigLua = ''
-          require("hop").setup {
-    keys = "etovxqpdygfblzhckisuran",
-    	}
-  '';
+  plugins.hop = {
+    enable = true;
+  };
   keymaps = [
     {
       action = "<cmd>HopWord<CR>";
-      key = "<leader><space>";
+      key = "<enter>";
+      mode = "n";
       options = {
         silent = true;
         desc = "Hop for words";

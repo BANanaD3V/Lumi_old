@@ -2,6 +2,7 @@
   imports = [
     ./git
     ./alpha.nix
+    ./zen-mode.nix
     ./noice.nix
     ./highlight-undo.nix
     ./todo-comments.nix
