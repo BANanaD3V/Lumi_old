@@ -14,16 +14,23 @@
       relativenumber = true;
       cmdheight = 0;
       fillchars.eob = " ";
-      scrolloff = 1000;
+      scrolloff = 999;
       foldenable = true;
       foldlevel = 99;
       foldlevelstart = 99;
       writebackup = false;
       virtualedit = "block";
       undofile = true;
+      inccommand = "split";
+      incsearch = true;
       timeoutlen = 500;
       termguicolors = true;
       smartindent = true;
+      cursorline = true;
+      cursorlineopt = "number";
+      listchars = {
+        tab = "-->";
+      };
     };
   };
 }
