@@ -3,9 +3,13 @@
   imports = [
     ./plugins
     ./colorscheme.nix
+    ./autocmds.nix
   ];
   config = {
-    globals.mapleader = " ";
+    globals = {
+      mapleader = " ";
+      vinsyn_embed = "alpPrj";
+    };
     clipboard.register = "unnamedplus";
     opts = {
       breakindent = true;
