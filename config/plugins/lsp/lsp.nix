@@ -39,5 +39,25 @@
         desc = "LSP code actions";
       };
     }
+    {
+      action = "require('telescope.builtin').lsp_document_symbols";
+      lua = true;
+      key = "<leader>ls";
+      options = {
+        silent = true;
+        desc = "Search symbol in buffer";
+      };
+    }
+    {
+      action = "function()
+           vim.lsp.inlay_hint(0, nil)
+         end";
+      lua = true;
+      key = "<leader>lh";
+      options = {
+        silent = true;
+        desc = "Toggle inlay hints";
+      };
+    }
   ];
 }
