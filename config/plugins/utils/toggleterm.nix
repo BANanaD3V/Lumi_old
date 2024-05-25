@@ -22,10 +22,9 @@
       direction = "horizontal";
       auto_scroll = true;
       float_opts = {
-        border = "shadow";
-        width = 0;
-        height = 0;
-        winblend = 1;
+        border = "rounded";
+        title_pos = "center";
+        winblend = 0;
       };
       winbar = {
         enabled = false;
@@ -42,7 +41,7 @@
   };
   keymaps = [
     {
-      action = "<cmd>ToggleTerm direction=float<cr>";
+      action = "<cmd>ToggleTerm direction=float name=Terminal<cr>";
       key = "<leader>tt";
       options = {
         silent = true;
