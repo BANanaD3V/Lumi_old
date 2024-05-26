@@ -1,37 +1,20 @@
 {pkgs, ...}: {
-  plugins.which-key.registrations = {
-    "<leader>g".name = "󰊢 Git";
-  };
+  extraPlugins = with pkgs.vimPlugins; [
+    lazygit-nvim
+  ];
+
+  extraConfigLua = ''
+    require("telescope").load_extension("lazygit")
+  '';
+
   keymaps = [
     {
-      action = ''
-        <cmd>lua _lazygit_toggle()<CR>
-      '';
+      mode = "n";
       key = "<leader>gg";
+      action = "<cmd>LazyGit<CR>";
       options = {
-        silent = true;
-        noremap = true;
-        desc = "Toggleterm lazygit";
+        desc = "LazyGit (root dir)";
       };
     }
-  ];
-  extraConfigLua = ''
-    local Terminal  = require('toggleterm.terminal').Terminal
-    local lazygit = Terminal:new({
-      cmd = "lazygit",
-      direction = "float",
-      -- function to run on opening the terminal
-      on_open = function(term)
-        vim.cmd("startinsert!")
-        vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", {noremap = true, silent = true})
-      end,
-    })
-
-    function _lazygit_toggle()
-      lazygit:toggle()
-    end
-  '';
-  extraPackages = with pkgs; [
-    lazygit
   ];
 }
