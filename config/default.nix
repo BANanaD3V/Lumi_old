@@ -12,10 +12,11 @@
     };
     clipboard.register = "unnamedplus";
     opts = {
+      showtabline = 2;
       breakindent = true;
       shiftwidth = 2;
       number = true;
-      relativenumber = true;
+      relativenumber = false;
       cmdheight = 0;
       fillchars.eob = " ";
       scrolloff = 999;

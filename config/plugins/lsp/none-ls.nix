@@ -2,7 +2,10 @@
   plugins.none-ls = {
     enable = true;
     enableLspFormat = true;
-    updateInInsert = false;
+    updateInInsert = true;
+    diagnosticConfig = {
+      update_in_insert = true;
+    };
     sources = {
       code_actions = {
         ts_node_action.enable = true;

@@ -2,7 +2,19 @@
   plugins.neo-tree = {
     enable = true;
     popupBorderStyle = "NC";
-    filesystem.hijackNetrwBehavior = "open_current";
+    filesystem = {
+      hijackNetrwBehavior = "open_current";
+      followCurrentFile = {
+        enabled = true;
+        leaveDirsOpen = false;
+      };
+    };
+    buffers = {
+      followCurrentFile = {
+        enabled = true;
+        leaveDirsOpen = false;
+      };
+    };
   };
   keymaps = [
     {

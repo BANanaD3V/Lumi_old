@@ -1,10 +1,11 @@
 {...}: {
   imports = [
     ./lsp.nix
+    ./coq.nix
     ./lint.nix
     ./none-ls.nix
     ./nvim-cmp.nix
-    ./treesitter.nix
+    ./treesitter
     ./typescript.nix
     ./lspsaga.nix
     ./conform-nvim.nix
