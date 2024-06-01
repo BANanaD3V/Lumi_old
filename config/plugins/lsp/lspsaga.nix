@@ -42,7 +42,7 @@
       autoSave = false;
       keys = {
         exec = "<CR>";
-        quit = ["<C-k>" "<Esc>"];
+        quit = ["<Esc>"];
         select = "x";
       };
     };
