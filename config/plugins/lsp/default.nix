@@ -13,5 +13,6 @@
     ./smart-splits.nix
     ./actions-preview.nix
     ./nvim-autopairs.nix
+    ./aerial.nix
   ];
 }

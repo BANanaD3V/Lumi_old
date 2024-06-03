@@ -3,7 +3,7 @@
   imports = [
     ./plugins
     ./colorscheme.nix
-    ./autocmds.nix
+    # ./autocmds.nix
   ];
   config = {
     globals = {
