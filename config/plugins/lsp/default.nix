@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./lsp.nix
+    ./otter.nix
     ./coq.nix
     ./lint.nix
     ./none-ls.nix

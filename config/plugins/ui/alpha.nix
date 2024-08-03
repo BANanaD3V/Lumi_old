@@ -175,7 +175,7 @@
   };
   keymaps = [
     {
-      action = ''
+      action.__raw = ''
           function()
           local wins = vim.api.nvim_tabpage_list_wins(0)
           if #wins > 1

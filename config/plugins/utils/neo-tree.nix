@@ -27,7 +27,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
           function()
           if vim.bo.filetype == "neo-tree" then
             vim.cmd.wincmd "p"

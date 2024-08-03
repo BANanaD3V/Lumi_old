@@ -80,7 +80,7 @@
 
   keymaps = [
     {
-      action = ''
+      action.__raw = ''
         function()
           vim.cmd "wa"
         end
@@ -93,7 +93,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
             buffer_picker(function(bufnr)
               vim.cmd.split()
@@ -109,7 +109,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
             buffer_picker(function(bufnr)
               vim.cmd.vsplit()
@@ -125,7 +125,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
           buffer_picker(function(bufnr)
             vim.api.nvim_win_set_buf(0, bufnr)
@@ -140,7 +140,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
           buffer_picker(function(bufnr)
             local buftype = vim.api.nvim_get_option_value("buftype", { buf = bufnr })
@@ -156,7 +156,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
           local current = vim.api.nvim_get_current_buf()
           for _, bufnr in ipairs(vim.t.bufs) do
@@ -175,7 +175,7 @@
       };
     }
     {
-      action = ''
+      action.__raw = ''
         function()
           local current = vim.api.nvim_get_current_buf()
           for _, bufnr in ipairs(vim.t.bufs) do

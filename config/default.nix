@@ -37,5 +37,10 @@
         tab = "-->";
       };
     };
+    performance = {
+      combinePlugins = {
+        enable = true;
+      };
+    };
   };
 }

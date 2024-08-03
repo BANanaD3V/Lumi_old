@@ -11,7 +11,11 @@
       };
     })
   ];
-  extraConfigLua = ''
-    require('remote-sshfs').setup()
-  '';
+  extraConfigLua =
+    /*
+    lua
+    */
+    ''
+      require('remote-sshfs').setup()
+    '';
 }
